@@ -1,0 +1,16 @@
+<?php
+	$user = array(
+			'name' => '张三',
+			'sex' => '男',
+			'photo' => 'data/Koala.jpg',
+			'nation' => '汉族',
+			'hometown' => '广东省',
+			'subject' => '计算机某专业',
+			'calss_' => '1',
+			'phone' => '0000000',
+			'eamil' => '123@qq.com',
+			'hobby' => array('dance','beat', "rap"),
+			'self' => 'good'
+	);
+	return $user;
+?>
