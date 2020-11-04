@@ -1,1 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
 <html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="CSS/style.css">
+</head>
+
+    <body>
+    	<div class="top">
+    		<div class="top-title">登录界面</div>
+    	</div>
+    	<div class="main">
+    		<form method='post' action='newfile.php'>
+    			<table class="total-table">
+    			<tr class="table-item"><td colspan=2>登录</td></tr>
+    			<tr class="table-item"><td class="item1">姓名</td><td><input class="item2" type="text" name="id" value="" /></td></tr>
+    			<tr class="table-item"><td class="item1">密码</td><td><input class="item2" type="password" name="pwd" value="" /></td></tr>
+    			<tr class="table-item"><td colspan=2><input class="item3" type="submit"  value="提交" /></td></tr>
+    			</table>
+    		
+    		
+    		</form>
+    	</div>
+    </body>
+ 
+</html>
