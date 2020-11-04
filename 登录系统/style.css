@@ -1,0 +1,28 @@
+// css文件
+                
+@CHARSET "UTF-8";
+/*总体布局*/
+html{height:100%;}
+body{margin:0;height:100%;background:url('image/bg.jpg');color:#333;font-family:Tahoma,simsun;font-size:15px;}
+.top{position:fixed;background:#369;height:52px;width:100%;}
+.top-title{color:#fff;font-family:'Microsoft YaHei';font-size:22px;font-weight:bold;text-align:center;line-height:52px;}
+.main{position:fixed;height:100%;width:100%; background:#fff;margin-top:52px;}
+.footer{position:fixed;width:100%;background:#e6e5e5;height:32px;bottom:0;box-shadow:1px -1px 9px #c2c2c2;font-size:12px;line-height:32px;text-align:center;color:#666;font-family:'Microsoft YaHei';}
+
+/* 登录表格 */
+.total-table{width:300px;border:1px solid #369;font-size:20px;font-weight:bold;text-align:center;line-height:35px;float:right; margin-top:100px;margin-right:20%;padding:5px;}
+.table-item{background:#fff;color:#369;padding:5px 5px;}
+.table-item .item1{width:80px;height:30px;background:#369;color:#fff;}
+.table-item .item2{width:210px;height:40px;border:none;border-bottom: 1px solid #369;}
+.table-item .item3{width:300px;height:45px;background:#369;color:#fff;border:none;}
+
+/* 展示页面 */
+.content{position:fixed;height:100%;width:100%; background:#fff;margin-top:52px;}
+.tip{position:relative;height:40px;width:100%;text-align:right;padding-right:50px;font-size:16px;font-weight:bold;line-height:30px;}
+.content-wrap{position:relative;width:650px;height:100%;align:center;margin:10px auto;}
+.content-wrap table{width:650px;border:1px solid #369;}
+.content-wrap tr{height:45px;font-size:18px;text-align:center;line-height:25px;}
+.content-wrap td{border:1px solid #369;}
+.img{width:150px;padding:5px;}
+.update{position:relative;height:30px;width:100px;background:#f00;font-size:16px;}
+.error {color: #FF0000;}
