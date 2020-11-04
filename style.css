@@ -26,3 +26,99 @@ body{margin:0;height:100%;background:url('image/bg.jpg');color:#333;font-family:
 .img{width:150px;padding:5px;}
 .update{position:relative;height:30px;width:100px;background:#f00;font-size:16px;}
 .error {color: #FF0000;}
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="CSS/style.css">
+</head>
+    <body>
+    <?php 
+    	require "data/info.php";
+    	$name = isset($_POST["id"])?$_POST['id']:"";
+    ?>
+    
+		<div class="top">
+			<div class="top-title"> 个人信息 </div>
+		</div>
+		<div class="content">
+		<div class='tip'>欢迎访问！admin	时间：
+			<a href="">修改信息</a>
+		</div>
+		<div class="content-wrap">
+			<table>
+				<tr><td colspan=5>基本情况</td></tr>
+				<tr><td>姓名</td><td>张三</td>
+				<td>性别</td><td>男</td>
+				<td rowspan="4" class="img"><img src="" /></td></tr>
+				<tr><td>联系方式</td><td>13845428743</td>
+				<td>邮箱</td><td>5426@qq.com</td></tr>
+				<tr><td>专业</td><td>计算机应用</td>
+				<td>班级</td><td>二班</td></tr>
+				<tr><td>爱好</td><td colspan="4">rap、dance</td></tr>
+				<tr><td>个人评价</td><td> good ! !</td></tr>
+			</table>
+			</div>
+		</div>
+		
+    </body>
+</html>
+          
+          
+          
+          
+          <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="CSS/style.css">
+</head>
+
+    <body>
+    	<div class="top">
+    		<div class="top-title">登录界面</div>
+    	</div>
+    	<div class="main">
+    		<form method='post' action='newfile.php'>
+    			<table class="total-table">
+    			<tr class="table-item"><td colspan=2>登录</td></tr>
+    			<tr class="table-item"><td class="item1">姓名</td><td><input class="item2" type="text" name="id" value="" /></td></tr>
+    			<tr class="table-item"><td class="item1">密码</td><td><input class="item2" type="password" name="pwd" value="" /></td></tr>
+    			<tr class="table-item"><td colspan=2><input class="item3" type="submit"  value="提交" /></td></tr>
+    			</table>
+    		
+    		
+    		</form>
+    	</div>
+    </body>
+ 
+</html>
+          
+          
+          
+ 
+<?php
+	$user = array(
+			'name' => '张三',
+			'sex' => '男',
+			'photo' => 'data/Koala.jpg',
+			'nation' => '汉族',
+			'hometown' => '广东省',
+			'subject' => '计算机某专业',
+			'calss_' => '1',
+			'phone' => '0000000',
+			'eamil' => '123@qq.com',
+			'hobby' => array('dance','beat', "rap"),
+			'self' => 'good'
+	);
+	return $user;
+?>
+      
